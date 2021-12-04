@@ -1,0 +1,160 @@
+#divPrincipal
+{
+    position: relative;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+#divGrilla
+{   
+    display: flex;
+    position:relative;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(224, 224, 224);
+    position: relative;
+    width:100%;
+}
+
+#divForm
+{
+    position: absolute;
+    background-color: rgb(210, 235, 255);
+    padding-left: 2rem;
+    padding-left: 2rem;
+    border-style:solid;
+    border-color: gray;
+    width: auto;
+    z-index: 5;
+}
+
+#divFiltros
+{
+    position: relative;
+    background-color: rgb(224, 224, 224);
+    padding-left: 5rem;
+    border-style:solid;
+    width: 100%;
+    margin: .2rem;
+    border-color: gray;
+    justify-content: flex-start;
+}
+
+#panelBtnAlta
+{
+    position: relative;
+    background-color: rgb(224, 224, 224);
+    padding: 1rem 5rem;
+    border-style:solid;
+    width: 100%;
+    margin: .2rem;
+    border-color: gray;
+    justify-content: flex-start;
+}
+
+#divCamposMostrados
+{
+    position: relative;
+    background-color: rgb(224, 224, 224);
+    padding-left: 5rem;
+    border-style:solid;
+    width: 100%;
+    margin: .2rem;
+    border-color: gray;
+    justify-content: flex-start;
+}
+
+form
+{
+    padding-bottom: 1rem;
+    width: 90%;
+}
+
+h1
+{
+    font-size: 22px;
+}
+
+#table
+{
+    border-collapse:collapse;
+    justify-content: center;
+    margin: .2rem;
+    width: 40%;
+}
+
+#btnAgregar
+{
+    background-color: rgb(161, 238, 8);
+    border-radius: .5rem;
+    margin-top: .5rem;
+    border-color: whitesmoke;
+    padding:.7rem 1.3rem;
+}
+
+#btnPromedio
+{
+    background-color: rgb(161, 238, 8);
+    border-radius: .5rem;
+    margin-top: .5rem;
+    border-color: whitesmoke;
+    padding:.5rem;
+}
+
+#btnEliminar
+{
+    background-color: rgba(255, 0, 0, 0.527);
+    border-radius: .5rem;
+    border-color: whitesmoke;
+    padding:.3rem .3rem;
+}
+
+#btnAlta
+{
+    background-color: rgba(46, 130, 255, 0.527);
+    border-radius: .5rem;
+    border-color: whitesmoke;
+    margin-left: 2.5rem;
+    padding: 0.4rem 1.5rem;
+}
+
+#btnCerrar
+{
+    background-color: rgb(211, 0, 0);
+    border-radius: .5rem;
+    margin-top: .5rem;
+    float: right;
+    border-color: white;
+    padding:.7rem 1.3rem;
+}
+
+th
+{
+    background-color: rgb(195, 245, 228);
+    padding: .4rem;
+}
+
+    
+tr
+{
+    border-bottom: .05rem solid rgba(128, 128, 128, 0.479);
+}
+
+td
+{
+    padding: .4rem;
+    background-color: rgb(211, 236, 248);
+    text-align: center;
+}
+
+.inputs
+{
+    margin: .5rem;
+    border-radius: .3rem;
+    padding: .3rem;
+    width: 85%;
+}

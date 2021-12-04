@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="./js/clases.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <title>Segundo Parcial - Carvallo</title>
+</head>
+<body>
+    <body>
+        <div id="divPrincipal">
+            <div id="panelBtnAlta">
+                <button type="button" id="btnAlta" >Alta</button>
+            </div>
+            <div id="divForm" hidden>
+                <h1>Alta Vehiculo</h1>
+                <form>
+                    <label for="inputId" >Id</label><input type="text" disabled=true class="inputs" placeholder="Id" id="inputId"><br>
+                    <label for="inputMarca" >Marca</label><input type="text" class="inputs" placeholder="Marca" id =inputMarca><br>
+                    <label for="inputModelo" >Modelo</label><input type="text" class="inputs" placeholder="Modelo" id =inputModelo><br>
+                    <label for="inputPrecio" >Precio</label><input type="text" class="inputs" placeholder="Precio" id =inputPrecio><br>
+                    <label for="selectTipo">Tipo</label>
+                    <select name="tipo" id="tipos">
+                        <option value="modelo" disabled hidden selected>Seleccione</option>
+                        <option value="auto">Auto</option>
+                        <option value="camioneta">Camioneta</option>
+                      </select>
+                    <br>
+                    <button type="button" id="btnAgregar">Agregar</button>
+                    <button type="button" id="btnCerrar">Cerrar</button>
+                </form>
+            </div>
+            <div id='divFiltros'>
+                <h1>Filtros</h1>
+                <label for="selectFiltros">Filtrar por:</label>
+                <select id="selectFiltros">
+                    <option value="no filtrar" selected=true>No filtrar</option>
+                    <option value="Auto">Auto</option>
+                    <option value="Camioneta">Camioneta</option>
+                </select>
+                <button type="button" id="btnFiltrar">Filtrar</button><br><br>
+                <label for='promPrecio' >Promedio de precio:</label><input id='promPrecio' type='text' disabled>
+                <button type="button" id="btnPromedio">Obtener precio promedio</button>
+            </div>
+            <div id='divCamposMostrados'>
+                <h1>Campos Mostrados</h1>
+                <p>Tildar los campos a mostrar</p>
+                <label><input type="checkbox" checked id="cboxId" >Id</label>
+                <label><input type="checkbox" checked id="cboxMarca">Marca</label>
+                <label><input type="checkbox" checked id="cboxModelo">Modelo</label>
+                <label><input type="checkbox" checked id="cboxPrecio">Precio</label>
+                <button type="button" id="btnActualizar">Actualizar Tabla</button>
+            </div>
+            <div id="divGrilla">
+                <h1>Lista de vehiculos</h1><br>
+                <table id='table'>
+                    <thead>
+                    <tr>
+                        <th>ID</th><th>Marca</th><th>Modelo</th><th>Precio</th><th>Accion</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</body>
+</html>
